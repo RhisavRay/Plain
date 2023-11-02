@@ -1,21 +1,26 @@
-*, *::after, *::before
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#map-container {
+  width: 95vw;
+  height: 95vh;
+  margin: auto;
 }
 
-.center {
-    position: fixed;
-    top: 5px;
-    left: 15px;
-    right: 15px;
-    bottom: 5px;
-    padding: 15px;
-  }
-  
-  #map {
-    width: 100%;
-    height: 100%;
-  }
-  
+#search-form {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+#pickup-location,
+#dropoff-location {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#submit-button {
+  width: 100%;
+}

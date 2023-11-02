@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bing Maps Project</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Bing Maps Search Path</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="https://www.bing.com/api/maps/mapcontrol?key=ArO9d27LmQdGrctWsgGQilQsOlsuQr5hlgMZcLpdSxQBfMIj44tL_wNa4IK-n2F-&callback=initMap" async defer></script>
 </head>
 <body>
-  <div id="map" class="center"></div>
+  <div id="map-container"></div>
 
-  <script src="script.js"></script>
+  <div id="search-form">
+    <input type="text" id="pickup-location" placeholder="Pick-up...">
+    <input type="text" id="dropoff-location" placeholder="Drop-off...">
+    <button type="submit" id="submit-button">Search Path</button>
+  </div>
+
+  <script src="scripts/getMap.js"></script>
 </body>
 </html>
